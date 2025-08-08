@@ -5,6 +5,8 @@ from google.oauth2 import service_account
 import gspread
 from gspread_dataframe import set_with_dataframe
 import datetime as dt
+import google.auth
+import google.auth.exceptions
 
 # Configuración
 PROJECT_ID = os.getenv("GOOGLE_CLOUD_PROJECT")
@@ -149,103 +151,55 @@ QUERIES = {
       CAST(COUNT(*) AS STRING) AS metric_value
     FROM `{project_id}.bank_marketing_dm.data_quality_audits`
     WHERE status = 'FAIL'
-    """
+    """""
 }
 
-def get_bigquery_client():
-    """Inicializar cliente BigQuery"""
-    return bigquery.Client(project=PROJECT_ID, location=LOCATION)
-
-def get_sheets_client():
-    """Inicializar cliente Google Sheets"""
-    if CREDENTIALS_FILE:
-        credentials = service_account.Credentials.from_service_account_file(
-            CREDENTIALS_FILE,
-            scopes=['https://www.googleapis.com/auth/spreadsheets']
+def run_queries_and_export():
+    """
+    Ejecuta las consultas en BigQuery y exporta los resultados a Google Sheets.
+    """
+    try:
+        # Autenticación
+        credentials, project_id = google.auth.default(
+            scopes=["https://www.googleapis.com/auth/cloud-platform", "https://www.googleapis.com/auth/drive"]
         )
-    else:
-        # Usar credenciales por defecto (gcloud auth application-default login)
-        credentials = None
-    
-    return gspread.authorize(credentials)
-
-def execute_query(client, query_name, query_sql):
-    """Ejecutar consulta y retornar DataFrame"""
-    try:
-        formatted_sql = query_sql.format(project_id=PROJECT_ID)
-        df = client.query(formatted_sql).to_dataframe()
-        print(f"✓ {query_name}: {len(df)} filas")
-        return df
-    except Exception as e:
-        print(f"✗ Error en {query_name}: {e}")
-        return pd.DataFrame()
-
-def create_or_get_sheet(sheets_client, sheet_name):
-    """Crear o obtener Google Sheet"""
-    try:
-        # Intentar abrir sheet existente
-        sheet = sheets_client.open(sheet_name)
-        print(f"✓ Sheet '{sheet_name}' encontrado")
-    except gspread.SpreadsheetNotFound:
-        # Crear nuevo sheet
-        sheet = sheets_client.create(sheet_name)
-        print(f"✓ Sheet '{sheet_name}' creado")
-    
-    return sheet
-
-def update_sheet_worksheet(sheet, worksheet_name, df):
-    """Actualizar worksheet con DataFrame"""
-    try:
-        # Crear o limpiar worksheet
-        try:
-            worksheet = sheet.worksheet(worksheet_name)
-            worksheet.clear()
-        except gspread.WorksheetNotFound:
-            worksheet = sheet.add_worksheet(title=worksheet_name, rows=1000, cols=20)
+        client = bigquery.Client(credentials=credentials, project=project_id, location=LOCATION)
         
-        # Añadir timestamp de actualización
-        timestamp_df = pd.DataFrame({
-            'Última Actualización': [dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')],
-            'Registros': [len(df)]
-        })
-        
-        # Combinar timestamp con datos
-        if not df.empty:
-            combined_df = pd.concat([timestamp_df, df], axis=1)
+        if CREDENTIALS_FILE:
+            gc = gspread.service_account(filename=CREDENTIALS_FILE)
         else:
-            combined_df = timestamp_df
-        
-        # Escribir a Google Sheets
-        set_with_dataframe(worksheet, combined_df)
-        print(f"✓ Worksheet '{worksheet_name}' actualizado")
-        
-    except Exception as e:
-        print(f"✗ Error actualizando '{worksheet_name}': {e}")
+            gc = gspread.authorize(credentials)
+            
+        spreadsheet = gc.open(SHEET_NAME)
 
-def main():
-    """Función principal"""
-    if not PROJECT_ID:
-        raise EnvironmentError("GOOGLE_CLOUD_PROJECT debe estar configurado")
-    
-    print(f"🔄 Actualizando Google Sheets: {SHEET_NAME}")
-    print(f"📊 Proyecto: {PROJECT_ID}")
-    print(f"⏰ Timestamp: {dt.datetime.now()}")
-    
-    # Inicializar clientes
-    bq_client = get_bigquery_client()
-    sheets_client = get_sheets_client()
-    
-    # Crear/obtener sheet
-    sheet = create_or_get_sheet(sheets_client, SHEET_NAME)
-    
-    # Ejecutar consultas y actualizar worksheets
-    for query_name, query_sql in QUERIES.items():
-        print(f"\n📋 Procesando: {query_name}")
-        df = execute_query(bq_client, query_name, query_sql)
-        update_sheet_worksheet(sheet, query_name, df)
-    
-    print(f"\n✅ Actualización completada: {sheet.url}")
-    return sheet.url
+        print("Autenticación exitosa.")
+
+        for sheet_title, query_template in QUERIES.items():
+            print(f"Ejecutando consulta para: {sheet_title}...")
+            
+            query = query_template.format(project_id=PROJECT_ID)
+            
+            try:
+                df = client.query(query).to_dataframe()
+                
+                try:
+                    worksheet = spreadsheet.worksheet(sheet_title)
+                except gspread.WorksheetNotFound:
+                    worksheet = spreadsheet.add_worksheet(title=sheet_title, rows=100, cols=20)
+                
+                # Limpiar la hoja antes de escribir nuevos datos
+                worksheet.clear()
+                
+                set_with_dataframe(worksheet, df)
+                print(f"Datos exportados a la hoja: '{sheet_title}'")
+
+            except Exception as e:
+                print(f"Error al procesar la hoja '{sheet_title}': {e}")
+
+    except google.auth.exceptions.DefaultCredentialsError:
+        print("Error de autenticación. Asegúrate de que las credenciales de Google Cloud están configuradas.")
+    except Exception as e:
+        print(f"Ocurrió un error inesperado: {e}")
 
 if __name__ == "__main__":
-    main()
+    run_queries_and_export()
