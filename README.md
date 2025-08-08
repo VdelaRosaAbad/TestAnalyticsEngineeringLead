@@ -23,13 +23,13 @@ Este repositorio contiene una solución completa para el ejercicio práctico: in
 
 1. Clonar el repo y preparar entorno:
    ```bash
-   git clone <URL_DE_TU_FORK>
+   git clone (https://github.com/VdelaRosaAbad/TestAnalyticsEngineeringLead)
    cd TestAnalyticsEngineeringLead
    ./scripts/bootstrap_cloudshell.sh
    ```
 2. Exportar variables de entorno (ajusta tu `PROJECT_ID` y localización):
    ```bash
-   export GOOGLE_CLOUD_PROJECT=<tu_project_id>
+   export GOOGLE_CLOUD_PROJECT=generated-surf-468214-g1
    export BQ_LOCATION=US
    ```
 3. Crear datasets (si no usas Terraform):
@@ -44,9 +44,13 @@ Este repositorio contiene una solución completa para el ejercicio práctico: in
    ```
 5. Ejecutar modelos y pruebas dbt (asegura nombres de variables consistentes: `conversion_rate`, `successful_contacts_count`, `customer_segment`):
    ```bash
+   source .venv/bin/activate
    pip install dbt-bigquery
+   # Instalar dependencias
    dbt deps --project-dir dbt
+   # Ejecutar todos los modelos
    dbt run  --project-dir dbt --profiles-dir dbt/profiles
+   # Ejecutar tests
    dbt test --project-dir dbt --profiles-dir dbt/profiles
    python scripts/data_quality_audit.py
    ```
