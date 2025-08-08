@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: customer_kpis
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+      - name: conversion_rate
+        tests:
+          - not_null
+          - accepted_range:
+              min_value: 0
+              max_value: 1
+      - name: successful_contacts_count
+        tests:
+          - not_null
+          - accepted_range:
+              min_value: 0
+              max_value: 1000
+

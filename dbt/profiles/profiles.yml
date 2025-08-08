@@ -1,0 +1,12 @@
+bank_marketing_profile:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: "{{ env_var('GOOGLE_CLOUD_PROJECT') }}"
+      dataset: "bank_marketing_dm"
+      threads: 4
+      location: "{{ env_var('BQ_LOCATION', 'US') }}"
+      priority: interactive
+
