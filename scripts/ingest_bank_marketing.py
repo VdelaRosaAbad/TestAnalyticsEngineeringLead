@@ -16,22 +16,24 @@ def download_and_extract_csv() -> pd.DataFrame:
     resp = requests.get(UCI_ZIP_URL, timeout=60)
     resp.raise_for_status()
     with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
-        # Prefer bank-additional-full.csv if available; otherwise bank-full.csv
-        target = None
-        for name in zf.namelist():
-            if name.endswith("bank-additional/bank-additional-full.csv"):
-                target = name
-                break
-        if target is None:
-            for name in zf.namelist():
-                if name.endswith("bank-full.csv"):
-                    target = name
-                    break
-        if target is None:
-            raise RuntimeError("No CSV found in the UCI zip")
-        with zf.open(target) as f:
-            df = pd.read_csv(f, sep=";", low_memory=False)
-    return df
+        # First, attempt to extract from the 'bank-additional.zip'
+        try:
+            with zf.open('bank-additional.zip') as nested_zf_file:
+                with zipfile.ZipFile(io.BytesIO(nested_zf_file.read())) as nested_zf:
+                    with nested_zf.open('bank-additional/bank-additional-full.csv') as f:
+                        return pd.read_csv(f, sep=";", low_memory=False)
+        except (KeyError, FileNotFoundError):
+            # If the preferred file is not found, try the fallback
+            try:
+                with zf.open('bank.zip') as nested_zf_file:
+                    with zipfile.ZipFile(io.BytesIO(nested_zf_file.read())) as nested_zf:
+                        # Assuming the CSV is named 'bank-full.csv' inside this zip
+                        with nested_zf.open('bank-full.csv') as f:
+                            return pd.read_csv(f, sep=";", low_memory=False)
+            except (KeyError, FileNotFoundError):
+                # If neither file is found
+                raise RuntimeError("No CSV found in the UCI zip")
+    raise RuntimeError("Could not extract any CSV file from the zip archives.")
 
 
 def upload_to_bigquery(df: pd.DataFrame) -> None:
@@ -39,7 +41,9 @@ def upload_to_bigquery(df: pd.DataFrame) -> None:
     table_id = f"{PROJECT_ID}.{RAW_DATASET}.{TABLE_NAME}"
 
     # Standardize column names (lowercase, underscores)
-    df.columns = [c.strip().lower().replace(" ", "_") for c in df.columns]
+    df.columns = [
+        c.strip().lower().replace(" ", "_").replace(".", "_") for c in df.columns
+    ]
 
     job_config = bigquery.LoadJobConfig(
         write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,

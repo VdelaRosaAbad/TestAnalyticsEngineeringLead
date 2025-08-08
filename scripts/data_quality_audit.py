@@ -2,6 +2,8 @@ import os
 import datetime as dt
 from google.cloud import bigquery
 
+import os
+
 PROJECT_ID = os.getenv("GOOGLE_CLOUD_PROJECT")
 LOCATION = os.getenv("BQ_LOCATION", "US")
 AUDIT_DATASET = os.getenv("AUDIT_DATASET", "bank_marketing_dm")
@@ -38,7 +40,7 @@ def ensure_table(client: bigquery.Client) -> None:
 def record_check(client: bigquery.Client, check_name: str, status: str, details: str) -> None:
     job_config = bigquery.QueryJobConfig(
         query_parameters=[
-            bigquery.ScalarQueryParameter("ts", "TIMESTAMP", dt.datetime.utcnow()),
+            bigquery.ScalarQueryParameter("ts", "TIMESTAMP", dt.datetime.now(dt.UTC)),
             bigquery.ScalarQueryParameter("check_name", "STRING", check_name),
             bigquery.ScalarQueryParameter("status", "STRING", status),
             bigquery.ScalarQueryParameter("details", "STRING", details),
@@ -51,17 +53,16 @@ def run_basic_audits() -> None:
     if not PROJECT_ID:
         raise EnvironmentError("GOOGLE_CLOUD_PROJECT must be set")
     client = bigquery.Client(project=PROJECT_ID, location=LOCATION)
-    ensure_table(client)
 
     # Example audits against the DM model (created by dbt) bank_marketing_dm.customer_kpis
     # 1) No nulls in customer_id
     q1 = f"""
-    SELECT COUNT(1) AS nulls
+    SELECT COUNT(1) AS null_count
     FROM `{PROJECT_ID}.bank_marketing_dm.customer_kpis`
     WHERE customer_id IS NULL
     """
-    nulls = list(client.query(q1).result())[0][0]
-    record_check(client, "customer_id_not_null", "PASS" if nulls == 0 else "FAIL", f"nulls={nulls}")
+    null_count = list(client.query(q1).result())[0][0]
+    record_check(client, "customer_id_not_null", "PASS" if null_count == 0 else "FAIL", f"nulls={null_count}")
 
     # 2) conversion_rate between 0 and 1
     q2 = f"""

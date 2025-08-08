@@ -1,0 +1,1162 @@
+[0m03:56:13.891292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb64d5340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb65f5df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb4d35730>]}
+
+
+============================== 03:56:13.897593 | 59cc9e9d-fce1-4917-bcf6-eaf901d128a8 ==============================
+[0m03:56:13.897593 [info ] [MainThread]: Running with dbt=1.10.7
+[0m03:56:13.898854 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/v23delarosa/.dbt', 'log_path': 'dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps --project-dir dbt', 'send_anonymous_usage_stats': 'True'}
+[0m03:56:14.086445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '59cc9e9d-fce1-4917-bcf6-eaf901d128a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb3fe77a0>]}
+[0m03:56:14.104870 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m03:56:14.105996 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m03:56:14.107367 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.34494838, "process_in_blocks": "1736", "process_kernel_time": 0.193847, "process_mem_max_rss": "102680", "process_out_blocks": "8", "process_user_time": 2.381412}
+[0m03:56:14.108132 [debug] [MainThread]: Command `dbt deps` succeeded at 03:56:14.107985 after 0.35 seconds
+[0m03:56:14.108695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb66bf6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb3a72ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bb3fb4050>]}
+[0m03:56:14.109247 [debug] [MainThread]: Flushing usage events
+[0m03:56:14.238924 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:59:04.250316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4976619670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497412c200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497412c410>]}
+
+
+============================== 03:59:04.255228 | 4054f036-4e11-4100-be82-c8e964a72b30 ==============================
+[0m03:59:04.255228 [info ] [MainThread]: Running with dbt=1.10.7
+[0m03:59:04.256117 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/v23delarosa/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt deps --project-dir dbt', 'send_anonymous_usage_stats': 'True'}
+[0m03:59:04.431020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4054f036-4e11-4100-be82-c8e964a72b30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4973d5ef60>]}
+[0m03:59:04.449296 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m03:59:04.450684 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m03:59:04.452363 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.32968205, "process_in_blocks": "0", "process_kernel_time": 0.184731, "process_mem_max_rss": "102952", "process_out_blocks": "16", "process_user_time": 2.360678}
+[0m03:59:04.453119 [debug] [MainThread]: Command `dbt deps` succeeded at 03:59:04.452971 after 0.33 seconds
+[0m03:59:04.453712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497448c230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4973d5ef00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4974101760>]}
+[0m03:59:04.454280 [debug] [MainThread]: Flushing usage events
+[0m03:59:04.637242 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:03:08.682193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61b48a1670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61b4e875c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61b68e1850>]}
+
+
+============================== 04:03:08.687153 | 647a48a4-87b5-45d7-b8d6-e0b2b74b5e58 ==============================
+[0m04:03:08.687153 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:03:08.688148 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/v23delarosa/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps --project-dir dbt', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:03:08.867287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '647a48a4-87b5-45d7-b8d6-e0b2b74b5e58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61b439bce0>]}
+[0m04:03:08.885953 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m04:03:08.887247 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m04:03:08.889143 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.29782724, "process_in_blocks": "0", "process_kernel_time": 0.201815, "process_mem_max_rss": "102928", "process_out_blocks": "8", "process_user_time": 2.312551}
+[0m04:03:08.889988 [debug] [MainThread]: Command `dbt deps` succeeded at 04:03:08.889817 after 0.30 seconds
+[0m04:03:08.890563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61b4b47230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61b87c3800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61b6be4680>]}
+[0m04:03:08.891152 [debug] [MainThread]: Flushing usage events
+[0m04:03:09.043894 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:07:32.444823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5e46a36ae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5e46751c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5e46a8af30>]}
+
+
+============================== 04:07:32.449532 | 495a452d-1475-41ae-84d6-77a633d0b8d8 ==============================
+[0m04:07:32.449532 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:07:32.450620 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'dbt/logs', 'profiles_dir': '/home/v23delarosa/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt deps --project-dir dbt', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:07:32.637074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '495a452d-1475-41ae-84d6-77a633d0b8d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5e468a4b60>]}
+[0m04:07:32.655959 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-3l_oaaw5'
+[0m04:07:32.656673 [error] [MainThread]: Encountered an error:
+">=1.1.1,<2.0.0" is not a valid semantic version.
+[0m04:07:32.659546 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 254, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/cli/main.py", line 461, in deps
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/task/deps.py", line 215, in run
+    self.lock()
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/task/deps.py", line 187, in lock
+    resolved_deps = resolve_packages(packages, self.project, self.cli_vars)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/deps/resolver.py", line 121, in resolve_packages
+    pending = PackageListing.from_contracts(packages)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/deps/resolver.py", line 91, in from_contracts
+    self.update_from(src)
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/deps/resolver.py", line 83, in update_from
+    pkg = RegistryUnpinnedPackage.from_contract(contract)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt/deps/registry.py", line 83, in from_contract
+    versions = [semver.VersionSpecifier.from_version_string(v) for v in raw_version]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/v23delarosa/TestAnalyticsEngineeringLead/.venv/lib/python3.12/site-packages/dbt_common/semver.py", line 99, in from_version_string
+    raise dbt_common.exceptions.base.SemverError(
+dbt_common.exceptions.base.SemverError: ">=1.1.1,<2.0.0" is not a valid semantic version.
+
+[0m04:07:32.661523 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.30604783, "process_in_blocks": "0", "process_kernel_time": 0.189858, "process_mem_max_rss": "103008", "process_out_blocks": "32", "process_user_time": 2.335588}
+[0m04:07:32.662703 [debug] [MainThread]: Command `dbt deps` failed at 04:07:32.662409 after 0.31 seconds
+[0m04:07:32.663539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5e470d6a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5e4a553800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5e46853ef0>]}
+[0m04:07:32.664188 [debug] [MainThread]: Flushing usage events
+[0m04:07:32.822284 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:10:33.531058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79acc1ad8080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79acc1ad8170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79acc1bc9040>]}
+
+
+============================== 04:10:33.535923 | e4b8f5f2-889f-40f6-abab-0cdee7781d30 ==============================
+[0m04:10:33.535923 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:10:33.536848 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'dbt/logs', 'version_check': 'True', 'profiles_dir': '/home/v23delarosa/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt deps --project-dir dbt', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:10:33.750840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e4b8f5f2-889f-40f6-abab-0cdee7781d30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79acc11ec050>]}
+[0m04:10:33.771147 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-n4mjmxus'
+[0m04:10:33.772151 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m04:10:33.853703 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m04:10:33.854921 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m04:10:33.896051 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m04:10:33.915905 [info ] [MainThread]: Updating lock file in file path: /home/v23delarosa/TestAnalyticsEngineeringLead/dbt/package-lock.yml
+[0m04:10:33.920522 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-77zlmlk_'
+[0m04:10:33.926375 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m04:10:34.119620 [info ] [MainThread]: Installed from version 1.3.0
+[0m04:10:34.120347 [info ] [MainThread]: Up to date!
+[0m04:10:34.121058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'e4b8f5f2-889f-40f6-abab-0cdee7781d30', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79acc103c560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79acc103f410>]}
+[0m04:10:34.122886 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.68592256, "process_in_blocks": "0", "process_kernel_time": 0.213595, "process_mem_max_rss": "103980", "process_out_blocks": "2312", "process_user_time": 2.526048}
+[0m04:10:34.123712 [debug] [MainThread]: Command `dbt deps` succeeded at 04:10:34.123523 after 0.69 seconds
+[0m04:10:34.124297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79acc121ff80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79acc11dadb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79acc177a4b0>]}
+[0m04:10:34.124917 [debug] [MainThread]: Flushing usage events
+[0m04:10:34.308348 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:10:53.266300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ec0521550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebebe6000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebebe6060>]}
+
+
+============================== 04:10:53.271312 | 676f5849-426c-41a3-b214-c30d906e2891 ==============================
+[0m04:10:53.271312 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:10:53.272415 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/v23delarosa/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt deps --project-dir dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m04:10:53.471705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '676f5849-426c-41a3-b214-c30d906e2891', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebdb66690>]}
+[0m04:10:53.502925 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-3ui7edgj'
+[0m04:10:53.503712 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m04:10:53.549074 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m04:10:53.550247 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m04:10:53.589794 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m04:10:53.596219 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m04:10:53.781323 [info ] [MainThread]: Installed from version 1.3.0
+[0m04:10:53.782149 [info ] [MainThread]: Up to date!
+[0m04:10:53.783221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '676f5849-426c-41a3-b214-c30d906e2891', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebdcbd160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebdb34350>]}
+[0m04:10:53.785226 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.6168251, "process_in_blocks": "0", "process_kernel_time": 0.210556, "process_mem_max_rss": "103616", "process_out_blocks": "2288", "process_user_time": 2.467104}
+[0m04:10:53.786296 [debug] [MainThread]: Command `dbt deps` succeeded at 04:10:53.786094 after 0.62 seconds
+[0m04:10:53.787252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebe4d8f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebdb3e390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebdaabf80>]}
+[0m04:10:53.788173 [debug] [MainThread]: Flushing usage events
+[0m04:10:53.918952 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:11:09.593631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a123c92e4e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a123ea31fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a123c92cf20>]}
+
+
+============================== 04:11:09.598470 | 10dcba45-48be-4bee-9415-98e1d430c735 ==============================
+[0m04:11:09.598470 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:11:09.599533 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'dbt/profiles', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt/profiles', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:11:10.823755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '10dcba45-48be-4bee-9415-98e1d430c735', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a12232b7590>]}
+[0m04:11:10.930177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '10dcba45-48be-4bee-9415-98e1d430c735', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1222518b30>]}
+[0m04:11:10.931236 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m04:11:11.107630 [debug] [MainThread]: checksum: 44f4b502e2ddc67beed4db71ce39b63f2d3b7fc0b96e49a69b096c8f6cc370bc, vars: {}, profile: , target: , version: 1.10.7
+[0m04:11:11.108899 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m04:11:11.109599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '10dcba45-48be-4bee-9415-98e1d430c735', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1221ea01a0>]}
+[0m04:11:13.376546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '10dcba45-48be-4bee-9415-98e1d430c735', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1221a7ce60>]}
+[0m04:11:13.492105 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:11:13.494961 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:11:13.514985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '10dcba45-48be-4bee-9415-98e1d430c735', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1221a9b380>]}
+[0m04:11:13.515968 [info ] [MainThread]: Found 2 models, 6 data tests, 606 macros
+[0m04:11:13.516707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '10dcba45-48be-4bee-9415-98e1d430c735', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a12212fbce0>]}
+[0m04:11:13.520088 [info ] [MainThread]: 
+[0m04:11:13.520896 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:11:13.521792 [info ] [MainThread]: 
+[0m04:11:13.522981 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:11:13.529184 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_generated-surf-468214-g1'
+[0m04:11:13.530050 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:11:13.724503 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1, now list_generated-surf-468214-g1_bank_marketing_dm)
+[0m04:11:13.725513 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:11:13.879256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '10dcba45-48be-4bee-9415-98e1d430c735', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1222518ce0>]}
+[0m04:11:13.887700 [debug] [Thread-1 (]: Began running node model.bank_marketing.stg_bank_marketing
+[0m04:11:13.888850 [info ] [Thread-1 (]: 1 of 2 START sql view model bank_marketing_dm.stg_bank_marketing ............... [RUN]
+[0m04:11:13.889698 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1_bank_marketing_dm, now model.bank_marketing.stg_bank_marketing)
+[0m04:11:13.890460 [debug] [Thread-1 (]: Began compiling node model.bank_marketing.stg_bank_marketing
+[0m04:11:13.903937 [debug] [Thread-1 (]: Writing injected SQL for node "model.bank_marketing.stg_bank_marketing"
+[0m04:11:13.905138 [debug] [Thread-1 (]: Began executing node model.bank_marketing.stg_bank_marketing
+[0m04:11:13.956075 [debug] [Thread-1 (]: Writing runtime sql for node "model.bank_marketing.stg_bank_marketing"
+[0m04:11:13.957277 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:11:13.958163 [debug] [Thread-1 (]: On model.bank_marketing.stg_bank_marketing: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "model.bank_marketing.stg_bank_marketing"} */
+
+
+  create or replace view `generated-surf-468214-g1`.`bank_marketing_dm`.`stg_bank_marketing`
+  OPTIONS()
+  as 
+
+with source as (
+    select *
+    from `generated-surf-468214-g1`.bank_marketing_raw.bank_marketing
+)
+
+, cleaned as (
+    select
+        cast(row_number() over(order by (select 1)) as int64) as customer_id,
+        age,
+        job,
+        marital,
+        education,
+        default,
+        housing,
+        loan,
+        contact,
+        month,
+        day_of_week,
+        duration,
+        campaign,
+        pdays,
+        previous,
+        poutcome,
+        emp_var_rate,
+        cons_price_idx,
+        cons_conf_idx,
+        euribor3m,
+        nr_employed,
+        case when lower(y) in ('yes','y','1','true','t') then 1 else 0 end as converted
+    from source
+)
+
+select * from cleaned;
+
+
+[0m04:11:14.166780 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:528f243f-19b5-43fb-980f-e81a9088a7e8&page=queryresults
+[0m04:11:14.168223 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got keyword DEFAULT at [20:9]; reason: invalidQuery, location: query, message: Syntax error: Expected ")" but got keyword DEFAULT at [20:9]')
+[0m04:11:15.095972 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:696b24bd-0b37-4f87-968a-4648369ff6de&page=queryresults
+[0m04:11:15.097060 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:696b24bd-0b37-4f87-968a-4648369ff6de&page=queryresults
+[0m04:11:15.106110 [debug] [Thread-1 (]: Database Error in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)
+  Syntax error: Expected ")" but got keyword DEFAULT at [20:9]
+  compiled code at target/run/bank_marketing/models/staging/stg_bank_marketing.sql
+[0m04:11:15.108780 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '10dcba45-48be-4bee-9415-98e1d430c735', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1221a9bad0>]}
+[0m04:11:15.109944 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model bank_marketing_dm.stg_bank_marketing ...... [[31mERROR[0m in 1.22s]
+[0m04:11:15.111206 [debug] [Thread-1 (]: Finished running node model.bank_marketing.stg_bank_marketing
+[0m04:11:15.112358 [debug] [Thread-7 (]: Marking all children of 'model.bank_marketing.stg_bank_marketing' to be skipped because of status 'error'.  Reason: Database Error in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)
+  Syntax error: Expected ")" but got keyword DEFAULT at [20:9]
+  compiled code at target/run/bank_marketing/models/staging/stg_bank_marketing.sql.
+[0m04:11:15.114666 [debug] [Thread-3 (]: Began running node model.bank_marketing.customer_kpis
+[0m04:11:15.115594 [info ] [Thread-3 (]: 2 of 2 SKIP relation bank_marketing_dm.customer_kpis ........................... [[33mSKIP[0m]
+[0m04:11:15.116860 [debug] [Thread-3 (]: Finished running node model.bank_marketing.customer_kpis
+[0m04:11:15.119382 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:11:15.120079 [debug] [MainThread]: Connection 'model.bank_marketing.stg_bank_marketing' was properly closed.
+[0m04:11:15.120690 [info ] [MainThread]: 
+[0m04:11:15.121341 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 1.60 seconds (1.60s).
+[0m04:11:15.123212 [debug] [MainThread]: Command end result
+[0m04:11:15.158835 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:11:15.161506 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:11:15.170044 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt/target/run_results.json
+[0m04:11:15.170689 [info ] [MainThread]: 
+[0m04:11:15.171437 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m04:11:15.172370 [info ] [MainThread]: 
+[0m04:11:15.173557 [error] [MainThread]: [31mFailure in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)[0m
+[0m04:11:15.174348 [error] [MainThread]:   Database Error in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)
+  Syntax error: Expected ")" but got keyword DEFAULT at [20:9]
+  compiled code at target/run/bank_marketing/models/staging/stg_bank_marketing.sql
+[0m04:11:15.175117 [info ] [MainThread]: 
+[0m04:11:15.176134 [info ] [MainThread]:   compiled code at target/compiled/bank_marketing/models/staging/stg_bank_marketing.sql
+[0m04:11:15.176882 [info ] [MainThread]: 
+[0m04:11:15.177825 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m04:11:15.179533 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 5.676321, "process_in_blocks": "344", "process_kernel_time": 0.403706, "process_mem_max_rss": "226652", "process_out_blocks": "3856", "process_user_time": 6.44865}
+[0m04:11:15.180300 [debug] [MainThread]: Command `dbt run` failed at 04:11:15.180153 after 5.68 seconds
+[0m04:11:15.180961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a123c40c350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1221adfc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1221abc0e0>]}
+[0m04:11:15.181593 [debug] [MainThread]: Flushing usage events
+[0m04:11:15.359554 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:11:55.536952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f77943350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f775e9040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f7990ac60>]}
+
+
+============================== 04:11:55.541793 | b8d8a2a6-fa13-4fc4-83d9-f361d1717497 ==============================
+[0m04:11:55.541793 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:11:55.543034 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'dbt/profiles', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt/profiles', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m04:11:56.793011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b8d8a2a6-fa13-4fc4-83d9-f361d1717497', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f62205460>]}
+[0m04:11:56.900742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b8d8a2a6-fa13-4fc4-83d9-f361d1717497', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f6113d100>]}
+[0m04:11:56.901800 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m04:11:57.090168 [debug] [MainThread]: checksum: 44f4b502e2ddc67beed4db71ce39b63f2d3b7fc0b96e49a69b096c8f6cc370bc, vars: {}, profile: , target: , version: 1.10.7
+[0m04:11:57.233595 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m04:11:57.234370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b8d8a2a6-fa13-4fc4-83d9-f361d1717497', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f612f3170>]}
+[0m04:11:59.461503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b8d8a2a6-fa13-4fc4-83d9-f361d1717497', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f60c6ef60>]}
+[0m04:11:59.569669 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:11:59.572369 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:11:59.590908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b8d8a2a6-fa13-4fc4-83d9-f361d1717497', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f60cf2330>]}
+[0m04:11:59.591735 [info ] [MainThread]: Found 2 models, 6 data tests, 606 macros
+[0m04:11:59.592337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b8d8a2a6-fa13-4fc4-83d9-f361d1717497', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f60349010>]}
+[0m04:11:59.595181 [info ] [MainThread]: 
+[0m04:11:59.595880 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:11:59.596393 [info ] [MainThread]: 
+[0m04:11:59.597227 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:11:59.603611 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_cloudshell-gca'
+[0m04:11:59.604449 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:11:59.722547 [debug] [ThreadPool]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('GET https://bigquery.googleapis.com/bigquery/v2/projects/cloudshell-gca/datasets?maxResults=10000&prettyPrint=false: The project cloudshell-gca has not enabled BigQuery.')
+[0m04:12:00.005114 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:12:00.005904 [debug] [MainThread]: Connection 'list_cloudshell-gca' was properly closed.
+[0m04:12:00.006440 [info ] [MainThread]: 
+[0m04:12:00.007058 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.41 seconds (0.41s).
+[0m04:12:00.007836 [error] [MainThread]: Encountered an error:
+Database Error
+  The project cloudshell-gca has not enabled BigQuery.
+[0m04:12:00.009405 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.5670123, "process_in_blocks": "0", "process_kernel_time": 0.409341, "process_mem_max_rss": "224580", "process_out_blocks": "2576", "process_user_time": 6.484345}
+[0m04:12:00.010356 [debug] [MainThread]: Command `dbt run` failed at 04:12:00.010188 after 4.57 seconds
+[0m04:12:00.011026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f772bcd70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f604c7770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c8f60cb4b30>]}
+[0m04:12:00.011657 [debug] [MainThread]: Flushing usage events
+[0m04:12:00.189251 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:12:11.765074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd98fbc95e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd98d761eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd98ddf1880>]}
+
+
+============================== 04:12:11.770056 | 6dd606ba-0e05-4967-a80d-93b07f4fa00a ==============================
+[0m04:12:11.770056 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:12:11.771258 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'dbt/profiles', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt/profiles', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m04:12:13.037586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6dd606ba-0e05-4967-a80d-93b07f4fa00a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd97394cdd0>]}
+[0m04:12:13.149524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6dd606ba-0e05-4967-a80d-93b07f4fa00a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd973fa7ef0>]}
+[0m04:12:13.150566 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m04:12:13.343072 [debug] [MainThread]: checksum: 44f4b502e2ddc67beed4db71ce39b63f2d3b7fc0b96e49a69b096c8f6cc370bc, vars: {}, profile: , target: , version: 1.10.7
+[0m04:12:13.520991 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:12:13.521678 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:12:13.684566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6dd606ba-0e05-4967-a80d-93b07f4fa00a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd9730af350>]}
+[0m04:12:13.797951 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:12:13.800756 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:12:13.821404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6dd606ba-0e05-4967-a80d-93b07f4fa00a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd972d3d820>]}
+[0m04:12:13.822281 [info ] [MainThread]: Found 2 models, 6 data tests, 606 macros
+[0m04:12:13.822933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6dd606ba-0e05-4967-a80d-93b07f4fa00a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd98d22e930>]}
+[0m04:12:13.825600 [info ] [MainThread]: 
+[0m04:12:13.826273 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:12:13.826807 [info ] [MainThread]: 
+[0m04:12:13.827589 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:12:13.834048 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_cloudshell-gca'
+[0m04:12:13.834967 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:12:13.973203 [debug] [ThreadPool]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('GET https://bigquery.googleapis.com/bigquery/v2/projects/cloudshell-gca/datasets?maxResults=10000&prettyPrint=false: The project cloudshell-gca has not enabled BigQuery.')
+[0m04:12:14.928857 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:12:14.929561 [debug] [MainThread]: Connection 'list_cloudshell-gca' was properly closed.
+[0m04:12:14.930124 [info ] [MainThread]: 
+[0m04:12:14.930696 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.10 seconds (1.10s).
+[0m04:12:14.933788 [error] [MainThread]: Encountered an error:
+Database Error
+  The project cloudshell-gca has not enabled BigQuery.
+[0m04:12:14.935270 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.2694223, "process_in_blocks": "0", "process_kernel_time": 0.380153, "process_mem_max_rss": "218568", "process_out_blocks": "1288", "process_user_time": 4.442206}
+[0m04:12:14.936063 [debug] [MainThread]: Command `dbt run` failed at 04:12:14.935913 after 3.27 seconds
+[0m04:12:14.936677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd98fbc95e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd9730af470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd9738fde50>]}
+[0m04:12:14.937264 [debug] [MainThread]: Flushing usage events
+[0m04:12:15.062555 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:12:38.518358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce28d6e4fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce28d3f7470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce28d6e7500>]}
+
+
+============================== 04:12:38.523357 | 39b6d678-c096-4a92-aefa-0e51efb55e76 ==============================
+[0m04:12:38.523357 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:12:38.524308 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'dbt/profiles', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt/profiles', 'send_anonymous_usage_stats': 'True'}
+[0m04:12:39.783646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '39b6d678-c096-4a92-aefa-0e51efb55e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce272ec7830>]}
+[0m04:12:39.894781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '39b6d678-c096-4a92-aefa-0e51efb55e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce2735dd760>]}
+[0m04:12:39.895884 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m04:12:40.087340 [debug] [MainThread]: checksum: 44f4b502e2ddc67beed4db71ce39b63f2d3b7fc0b96e49a69b096c8f6cc370bc, vars: {}, profile: , target: , version: 1.10.7
+[0m04:12:40.232220 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m04:12:40.233099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '39b6d678-c096-4a92-aefa-0e51efb55e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce272a40800>]}
+[0m04:12:42.520738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39b6d678-c096-4a92-aefa-0e51efb55e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce2721db4a0>]}
+[0m04:12:42.630095 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:12:42.632895 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:12:42.652601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '39b6d678-c096-4a92-aefa-0e51efb55e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce2720082c0>]}
+[0m04:12:42.653502 [info ] [MainThread]: Found 2 models, 6 data tests, 606 macros
+[0m04:12:42.654148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39b6d678-c096-4a92-aefa-0e51efb55e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce28ea705f0>]}
+[0m04:12:42.656930 [info ] [MainThread]: 
+[0m04:12:42.657696 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:12:42.658211 [info ] [MainThread]: 
+[0m04:12:42.659020 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:12:42.666068 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_generated-surf-468214-g1'
+[0m04:12:42.666995 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:12:42.848362 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1, now list_generated-surf-468214-g1_bank_marketing_dm)
+[0m04:12:42.849312 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:12:43.033980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39b6d678-c096-4a92-aefa-0e51efb55e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce28f713e90>]}
+[0m04:12:43.038179 [debug] [Thread-1 (]: Began running node model.bank_marketing.stg_bank_marketing
+[0m04:12:43.039284 [info ] [Thread-1 (]: 1 of 2 START sql view model bank_marketing_dm.stg_bank_marketing ............... [RUN]
+[0m04:12:43.040251 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1_bank_marketing_dm, now model.bank_marketing.stg_bank_marketing)
+[0m04:12:43.040995 [debug] [Thread-1 (]: Began compiling node model.bank_marketing.stg_bank_marketing
+[0m04:12:43.054198 [debug] [Thread-1 (]: Writing injected SQL for node "model.bank_marketing.stg_bank_marketing"
+[0m04:12:43.055738 [debug] [Thread-1 (]: Began executing node model.bank_marketing.stg_bank_marketing
+[0m04:12:43.106429 [debug] [Thread-1 (]: Writing runtime sql for node "model.bank_marketing.stg_bank_marketing"
+[0m04:12:43.107581 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:12:43.108759 [debug] [Thread-1 (]: On model.bank_marketing.stg_bank_marketing: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "model.bank_marketing.stg_bank_marketing"} */
+
+
+  create or replace view `generated-surf-468214-g1`.`bank_marketing_dm`.`stg_bank_marketing`
+  OPTIONS()
+  as 
+
+with source as (
+    select *
+    from `cloudshell-gca`.bank_marketing_raw.bank_marketing
+)
+
+, cleaned as (
+    select
+        cast(row_number() over(order by (select 1)) as int64) as customer_id,
+        age,
+        job,
+        marital,
+        education,
+        `default`,
+        housing,
+        loan,
+        contact,
+        month,
+        day_of_week,
+        duration,
+        campaign,
+        pdays,
+        previous,
+        poutcome,
+        emp_var_rate,
+        cons_price_idx,
+        cons_conf_idx,
+        euribor3m,
+        nr_employed,
+        case when lower(y) in ('yes','y','1','true','t') then 1 else 0 end as converted
+    from source
+)
+
+select * from cleaned;
+
+
+[0m04:12:43.389938 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:1b257272-6b48-48be-b3e7-5307bce648dc&page=queryresults
+[0m04:12:43.390936 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('The project cloudshell-gca has not enabled BigQuery.; reason: invalid, message: The project cloudshell-gca has not enabled BigQuery.')
+[0m04:12:43.617883 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:8040aa7c-8bb8-49e1-a545-1b9068d38999&page=queryresults
+[0m04:12:43.618908 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:8040aa7c-8bb8-49e1-a545-1b9068d38999&page=queryresults
+[0m04:12:43.625975 [debug] [Thread-1 (]: Database Error in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)
+  The project cloudshell-gca has not enabled BigQuery.
+  compiled code at target/run/bank_marketing/models/staging/stg_bank_marketing.sql
+[0m04:12:43.628881 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '39b6d678-c096-4a92-aefa-0e51efb55e76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce272969160>]}
+[0m04:12:43.630297 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model bank_marketing_dm.stg_bank_marketing ...... [[31mERROR[0m in 0.59s]
+[0m04:12:43.631418 [debug] [Thread-1 (]: Finished running node model.bank_marketing.stg_bank_marketing
+[0m04:12:43.632845 [debug] [Thread-7 (]: Marking all children of 'model.bank_marketing.stg_bank_marketing' to be skipped because of status 'error'.  Reason: Database Error in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)
+  The project cloudshell-gca has not enabled BigQuery.
+  compiled code at target/run/bank_marketing/models/staging/stg_bank_marketing.sql.
+[0m04:12:43.635192 [debug] [Thread-3 (]: Began running node model.bank_marketing.customer_kpis
+[0m04:12:43.636142 [info ] [Thread-3 (]: 2 of 2 SKIP relation bank_marketing_dm.customer_kpis ........................... [[33mSKIP[0m]
+[0m04:12:43.637252 [debug] [Thread-3 (]: Finished running node model.bank_marketing.customer_kpis
+[0m04:12:43.639962 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:12:43.640598 [debug] [MainThread]: Connection 'model.bank_marketing.stg_bank_marketing' was properly closed.
+[0m04:12:43.641173 [info ] [MainThread]: 
+[0m04:12:43.641807 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.98 seconds (0.98s).
+[0m04:12:43.643007 [debug] [MainThread]: Command end result
+[0m04:12:43.680148 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:12:43.682887 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:12:43.692111 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt/target/run_results.json
+[0m04:12:43.692851 [info ] [MainThread]: 
+[0m04:12:43.693516 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m04:12:43.694295 [info ] [MainThread]: 
+[0m04:12:43.695432 [error] [MainThread]: [31mFailure in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)[0m
+[0m04:12:43.696538 [error] [MainThread]:   Database Error in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)
+  The project cloudshell-gca has not enabled BigQuery.
+  compiled code at target/run/bank_marketing/models/staging/stg_bank_marketing.sql
+[0m04:12:43.697097 [info ] [MainThread]: 
+[0m04:12:43.697740 [info ] [MainThread]:   compiled code at target/compiled/bank_marketing/models/staging/stg_bank_marketing.sql
+[0m04:12:43.698224 [info ] [MainThread]: 
+[0m04:12:43.698768 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m04:12:43.700145 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 5.2824388, "process_in_blocks": "0", "process_kernel_time": 0.442973, "process_mem_max_rss": "226752", "process_out_blocks": "3856", "process_user_time": 6.654}
+[0m04:12:43.700903 [debug] [MainThread]: Command `dbt run` failed at 04:12:43.700757 after 5.28 seconds
+[0m04:12:43.701467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce28d3f7470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce272160770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ce2721c5cd0>]}
+[0m04:12:43.702119 [debug] [MainThread]: Flushing usage events
+[0m04:12:43.849835 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:12:53.426041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6194367b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa618a80b30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa61803c170>]}
+
+
+============================== 04:12:53.431117 | f1280e35-a8d1-4623-a36a-e975286c16f5 ==============================
+[0m04:12:53.431117 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:12:53.432530 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'dbt/profiles', 'log_path': 'dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt/profiles', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m04:12:53.454868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4ab2442f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4ad1d62d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4aae482f0>]}
+
+
+============================== 04:12:53.460715 | a8953664-be9c-4f8b-855d-a76a02efb4f7 ==============================
+[0m04:12:53.460715 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:12:53.462116 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'dbt/profiles', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt clean --project-dir dbt --profiles-dir dbt/profiles', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m04:12:53.698775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a8953664-be9c-4f8b-855d-a76a02efb4f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4aaba14f0>]}
+[0m04:12:53.721550 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt will not clean the following directories outside the project: ['/home/v23delarosa/TestAnalyticsEngineeringLead/dbt/target', '/home/v23delarosa/TestAnalyticsEngineeringLead/dbt/dbt_packages']
+[0m04:12:53.724325 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": false, "command_wall_clock_time": 0.37338918, "process_in_blocks": "0", "process_kernel_time": 0.224422, "process_mem_max_rss": "102548", "process_out_blocks": "8", "process_user_time": 2.641259}
+[0m04:12:53.725509 [debug] [MainThread]: Command `dbt clean` failed at 04:12:53.725287 after 0.37 seconds
+[0m04:12:53.726347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4aad70140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4aa63c470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4aa5b7dd0>]}
+[0m04:12:53.727228 [debug] [MainThread]: Flushing usage events
+[0m04:12:53.861916 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:12:54.834826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f1280e35-a8d1-4623-a36a-e975286c16f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa601742f00>]}
+[0m04:12:54.948368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f1280e35-a8d1-4623-a36a-e975286c16f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa601836270>]}
+[0m04:12:54.949459 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m04:12:55.159699 [debug] [MainThread]: checksum: 44f4b502e2ddc67beed4db71ce39b63f2d3b7fc0b96e49a69b096c8f6cc370bc, vars: {}, profile: , target: , version: 1.10.7
+[0m04:12:55.337176 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:12:55.337908 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:12:55.498880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f1280e35-a8d1-4623-a36a-e975286c16f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa600ce7470>]}
+[0m04:12:55.612551 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:12:55.615252 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:12:55.633960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f1280e35-a8d1-4623-a36a-e975286c16f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa600af7230>]}
+[0m04:12:55.634784 [info ] [MainThread]: Found 2 models, 6 data tests, 606 macros
+[0m04:12:55.635539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f1280e35-a8d1-4623-a36a-e975286c16f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa600953440>]}
+[0m04:12:55.638207 [info ] [MainThread]: 
+[0m04:12:55.638993 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:12:55.639845 [info ] [MainThread]: 
+[0m04:12:55.641045 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:12:55.650147 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_generated-surf-468214-g1'
+[0m04:12:55.651199 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:12:55.856519 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1, now list_generated-surf-468214-g1_bank_marketing_dm)
+[0m04:12:55.857433 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:12:56.028147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f1280e35-a8d1-4623-a36a-e975286c16f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa600973320>]}
+[0m04:12:56.032212 [debug] [Thread-1 (]: Began running node model.bank_marketing.stg_bank_marketing
+[0m04:12:56.033236 [info ] [Thread-1 (]: 1 of 2 START sql view model bank_marketing_dm.stg_bank_marketing ............... [RUN]
+[0m04:12:56.034077 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1_bank_marketing_dm, now model.bank_marketing.stg_bank_marketing)
+[0m04:12:56.034746 [debug] [Thread-1 (]: Began compiling node model.bank_marketing.stg_bank_marketing
+[0m04:12:56.049834 [debug] [Thread-1 (]: Writing injected SQL for node "model.bank_marketing.stg_bank_marketing"
+[0m04:12:56.051130 [debug] [Thread-1 (]: Began executing node model.bank_marketing.stg_bank_marketing
+[0m04:12:56.103381 [debug] [Thread-1 (]: Writing runtime sql for node "model.bank_marketing.stg_bank_marketing"
+[0m04:12:56.104521 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:12:56.105355 [debug] [Thread-1 (]: On model.bank_marketing.stg_bank_marketing: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "model.bank_marketing.stg_bank_marketing"} */
+
+
+  create or replace view `generated-surf-468214-g1`.`bank_marketing_dm`.`stg_bank_marketing`
+  OPTIONS()
+  as 
+
+with source as (
+    select *
+    from `cloudshell-gca`.bank_marketing_raw.bank_marketing
+)
+
+, cleaned as (
+    select
+        cast(row_number() over(order by (select 1)) as int64) as customer_id,
+        age,
+        job,
+        marital,
+        education,
+        `default`,
+        housing,
+        loan,
+        contact,
+        month,
+        day_of_week,
+        duration,
+        campaign,
+        pdays,
+        previous,
+        poutcome,
+        emp_var_rate,
+        cons_price_idx,
+        cons_conf_idx,
+        euribor3m,
+        nr_employed,
+        case when lower(y) in ('yes','y','1','true','t') then 1 else 0 end as converted
+    from source
+)
+
+select * from cleaned;
+
+
+[0m04:12:56.354948 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:9e2b3155-0e50-4c14-b63e-671c95640ac2&page=queryresults
+[0m04:12:56.356012 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('The project cloudshell-gca has not enabled BigQuery.; reason: invalid, message: The project cloudshell-gca has not enabled BigQuery.')
+[0m04:12:56.994640 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:69ee28fe-4576-45a6-8232-25fe5013a9c7&page=queryresults
+[0m04:12:56.996394 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:69ee28fe-4576-45a6-8232-25fe5013a9c7&page=queryresults
+[0m04:12:57.004264 [debug] [Thread-1 (]: Database Error in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)
+  The project cloudshell-gca has not enabled BigQuery.
+  compiled code at target/run/bank_marketing/models/staging/stg_bank_marketing.sql
+[0m04:12:57.006945 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f1280e35-a8d1-4623-a36a-e975286c16f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa617c58800>]}
+[0m04:12:57.008095 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model bank_marketing_dm.stg_bank_marketing ...... [[31mERROR[0m in 0.97s]
+[0m04:12:57.009167 [debug] [Thread-1 (]: Finished running node model.bank_marketing.stg_bank_marketing
+[0m04:12:57.010211 [debug] [Thread-7 (]: Marking all children of 'model.bank_marketing.stg_bank_marketing' to be skipped because of status 'error'.  Reason: Database Error in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)
+  The project cloudshell-gca has not enabled BigQuery.
+  compiled code at target/run/bank_marketing/models/staging/stg_bank_marketing.sql.
+[0m04:12:57.012723 [debug] [Thread-3 (]: Began running node model.bank_marketing.customer_kpis
+[0m04:12:57.013579 [info ] [Thread-3 (]: 2 of 2 SKIP relation bank_marketing_dm.customer_kpis ........................... [[33mSKIP[0m]
+[0m04:12:57.014361 [debug] [Thread-3 (]: Finished running node model.bank_marketing.customer_kpis
+[0m04:12:57.016560 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:12:57.017105 [debug] [MainThread]: Connection 'model.bank_marketing.stg_bank_marketing' was properly closed.
+[0m04:12:57.017648 [info ] [MainThread]: 
+[0m04:12:57.018219 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 1.38 seconds (1.38s).
+[0m04:12:57.019327 [debug] [MainThread]: Command end result
+[0m04:12:57.056182 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:12:57.058929 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:12:57.068158 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt/target/run_results.json
+[0m04:12:57.068826 [info ] [MainThread]: 
+[0m04:12:57.069621 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m04:12:57.070218 [info ] [MainThread]: 
+[0m04:12:57.070888 [error] [MainThread]: [31mFailure in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)[0m
+[0m04:12:57.071494 [error] [MainThread]:   Database Error in model stg_bank_marketing (models/staging/stg_bank_marketing.sql)
+  The project cloudshell-gca has not enabled BigQuery.
+  compiled code at target/run/bank_marketing/models/staging/stg_bank_marketing.sql
+[0m04:12:57.072132 [info ] [MainThread]: 
+[0m04:12:57.073115 [info ] [MainThread]:   compiled code at target/compiled/bank_marketing/models/staging/stg_bank_marketing.sql
+[0m04:12:57.073784 [info ] [MainThread]: 
+[0m04:12:57.074382 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m04:12:57.075853 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.755826, "process_in_blocks": "0", "process_kernel_time": 0.467024, "process_mem_max_rss": "220580", "process_out_blocks": "2568", "process_user_time": 4.726925}
+[0m04:12:57.076653 [debug] [MainThread]: Command `dbt run` failed at 04:12:57.076502 after 3.76 seconds
+[0m04:12:57.077274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa61b15b800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa61b15b830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa619851be0>]}
+[0m04:12:57.077922 [debug] [MainThread]: Flushing usage events
+[0m04:12:57.197131 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:13:25.839501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eead1133620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eead1133cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eead09e3bf0>]}
+
+
+============================== 04:13:25.845016 | 9d9d489a-00e0-4cdc-8812-2895bd602efe ==============================
+[0m04:13:25.845016 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:13:25.845979 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'dbt/profiles', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt/profiles', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:13:27.113058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9d9d489a-00e0-4cdc-8812-2895bd602efe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eeab6bd5f10>]}
+[0m04:13:27.222901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9d9d489a-00e0-4cdc-8812-2895bd602efe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eeab6394bf0>]}
+[0m04:13:27.223958 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m04:13:27.425509 [debug] [MainThread]: checksum: 44f4b502e2ddc67beed4db71ce39b63f2d3b7fc0b96e49a69b096c8f6cc370bc, vars: {}, profile: , target: , version: 1.10.7
+[0m04:13:27.598631 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m04:13:27.599720 [debug] [MainThread]: Partial parsing: updated file: bank_marketing://models/staging/stg_bank_marketing.sql
+[0m04:13:28.025766 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'GOOGLE_CLOUD_PROJECT'
+[0m04:13:28.027317 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.2819295, "process_in_blocks": "0", "process_kernel_time": 0.388849, "process_mem_max_rss": "218600", "process_out_blocks": "16", "process_user_time": 4.626583}
+[0m04:13:28.028405 [debug] [MainThread]: Command `dbt run` failed at 04:13:28.028233 after 2.28 seconds
+[0m04:13:28.029090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eead01c5790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eeab5c31760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eeab5c303e0>]}
+[0m04:13:28.029723 [debug] [MainThread]: Flushing usage events
+[0m04:13:28.209746 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:13:52.493601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa48eceade0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa48e7dc8f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4903f8920>]}
+
+
+============================== 04:13:52.498589 | 283a772e-0d3f-444b-8cf5-a41e56521010 ==============================
+[0m04:13:52.498589 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:13:52.499520 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'dbt/logs', 'fail_fast': 'False', 'profiles_dir': 'dbt/profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt/profiles', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:13:53.756506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '283a772e-0d3f-444b-8cf5-a41e56521010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa47a82d460>]}
+[0m04:13:53.866853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '283a772e-0d3f-444b-8cf5-a41e56521010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4909ea4e0>]}
+[0m04:13:53.867915 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m04:13:54.076383 [debug] [MainThread]: checksum: 44f4b502e2ddc67beed4db71ce39b63f2d3b7fc0b96e49a69b096c8f6cc370bc, vars: {}, profile: , target: , version: 1.10.7
+[0m04:13:54.297524 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m04:13:54.298555 [debug] [MainThread]: Partial parsing: updated file: bank_marketing://models/staging/stg_bank_marketing.sql
+[0m04:13:54.828285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '283a772e-0d3f-444b-8cf5-a41e56521010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa473cf0bf0>]}
+[0m04:13:54.938416 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:13:54.941220 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:13:54.961229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '283a772e-0d3f-444b-8cf5-a41e56521010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa473531220>]}
+[0m04:13:54.962117 [info ] [MainThread]: Found 2 models, 6 data tests, 606 macros
+[0m04:13:54.962828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '283a772e-0d3f-444b-8cf5-a41e56521010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa473c58830>]}
+[0m04:13:54.965626 [info ] [MainThread]: 
+[0m04:13:54.966316 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:13:54.966860 [info ] [MainThread]: 
+[0m04:13:54.967619 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:13:54.974343 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_generated-surf-468214-g1'
+[0m04:13:54.975265 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:13:55.194373 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1, now list_generated-surf-468214-g1_bank_marketing_dm)
+[0m04:13:55.195344 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:13:55.352649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '283a772e-0d3f-444b-8cf5-a41e56521010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4908c80e0>]}
+[0m04:13:55.357161 [debug] [Thread-1 (]: Began running node model.bank_marketing.stg_bank_marketing
+[0m04:13:55.358228 [info ] [Thread-1 (]: 1 of 2 START sql view model bank_marketing_dm.stg_bank_marketing ............... [RUN]
+[0m04:13:55.359115 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1_bank_marketing_dm, now model.bank_marketing.stg_bank_marketing)
+[0m04:13:55.360137 [debug] [Thread-1 (]: Began compiling node model.bank_marketing.stg_bank_marketing
+[0m04:13:55.372058 [debug] [Thread-1 (]: Writing injected SQL for node "model.bank_marketing.stg_bank_marketing"
+[0m04:13:55.373163 [debug] [Thread-1 (]: Began executing node model.bank_marketing.stg_bank_marketing
+[0m04:13:55.424315 [debug] [Thread-1 (]: Writing runtime sql for node "model.bank_marketing.stg_bank_marketing"
+[0m04:13:55.425405 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:13:55.426262 [debug] [Thread-1 (]: On model.bank_marketing.stg_bank_marketing: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "model.bank_marketing.stg_bank_marketing"} */
+
+
+  create or replace view `generated-surf-468214-g1`.`bank_marketing_dm`.`stg_bank_marketing`
+  OPTIONS()
+  as 
+
+with source as (
+    select *
+    from `generated-surf-468214-g1`.bank_marketing_raw.bank_marketing
+)
+
+, cleaned as (
+    select
+        cast(row_number() over(order by (select 1)) as int64) as customer_id,
+        age,
+        job,
+        marital,
+        education,
+        `default`,
+        housing,
+        loan,
+        contact,
+        month,
+        day_of_week,
+        duration,
+        campaign,
+        pdays,
+        previous,
+        poutcome,
+        emp_var_rate,
+        cons_price_idx,
+        cons_conf_idx,
+        euribor3m,
+        nr_employed,
+        case when lower(y) in ('yes','y','1','true','t') then 1 else 0 end as converted
+    from source
+)
+
+select * from cleaned;
+
+
+[0m04:13:55.856711 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:f71c5452-e56c-4899-8c57-8fedc3ffa8a6&page=queryresults
+[0m04:13:56.203643 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '283a772e-0d3f-444b-8cf5-a41e56521010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa47888ee10>]}
+[0m04:13:56.205410 [info ] [Thread-1 (]: 1 of 2 OK created sql view model bank_marketing_dm.stg_bank_marketing .......... [[32mCREATE VIEW (0 processed)[0m in 0.84s]
+[0m04:13:56.207125 [debug] [Thread-1 (]: Finished running node model.bank_marketing.stg_bank_marketing
+[0m04:13:56.209087 [debug] [Thread-3 (]: Began running node model.bank_marketing.customer_kpis
+[0m04:13:56.210252 [info ] [Thread-3 (]: 2 of 2 START sql table model bank_marketing_dm.customer_kpis ................... [RUN]
+[0m04:13:56.211432 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.bank_marketing.customer_kpis'
+[0m04:13:56.212103 [debug] [Thread-3 (]: Began compiling node model.bank_marketing.customer_kpis
+[0m04:13:56.216968 [debug] [Thread-3 (]: Writing injected SQL for node "model.bank_marketing.customer_kpis"
+[0m04:13:56.217962 [debug] [Thread-3 (]: Began executing node model.bank_marketing.customer_kpis
+[0m04:13:56.268010 [debug] [Thread-3 (]: Writing runtime sql for node "model.bank_marketing.customer_kpis"
+[0m04:13:56.269189 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m04:13:56.270034 [debug] [Thread-3 (]: On model.bank_marketing.customer_kpis: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "model.bank_marketing.customer_kpis"} */
+
+  
+    
+
+    create or replace table `generated-surf-468214-g1`.`bank_marketing_dm`.`customer_kpis`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with base as (
+    select * from `generated-surf-468214-g1`.`bank_marketing_dm`.`stg_bank_marketing`
+)
+
+, agg as (
+    select
+        customer_id,
+        sum(case when converted = 1 then 1 else 0 end) as successful_contacts_count,
+        count(*) as total_contacts,
+        safe_divide(sum(case when converted = 1 then 1 else 0 end), count(*)) as conversion_rate,
+        case
+            when age < 30 then 'young'
+            when age between 30 and 50 then 'adult'
+            else 'senior'
+        end as customer_segment
+    from base
+    group by customer_id, customer_segment
+)
+
+select
+    customer_id,
+    successful_contacts_count,
+    total_contacts,
+    conversion_rate,
+    customer_segment
+from agg
+    );
+  
+[0m04:13:56.851259 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:22587412-ba45-4488-b74a-c9b13a5028d4&page=queryresults
+[0m04:13:59.025498 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '283a772e-0d3f-444b-8cf5-a41e56521010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa4735dee10>]}
+[0m04:13:59.026818 [info ] [Thread-3 (]: 2 of 2 OK created sql table model bank_marketing_dm.customer_kpis .............. [[32mCREATE TABLE (41.2k rows, 487.2 KiB processed)[0m in 2.81s]
+[0m04:13:59.029023 [debug] [Thread-3 (]: Finished running node model.bank_marketing.customer_kpis
+[0m04:13:59.031443 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:13:59.032069 [debug] [MainThread]: Connection 'model.bank_marketing.stg_bank_marketing' was properly closed.
+[0m04:13:59.032558 [debug] [MainThread]: Connection 'model.bank_marketing.customer_kpis' was properly closed.
+[0m04:13:59.033099 [info ] [MainThread]: 
+[0m04:13:59.033763 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 4.07 seconds (4.07s).
+[0m04:13:59.035067 [debug] [MainThread]: Command end result
+[0m04:13:59.071125 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:13:59.073914 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:13:59.083106 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt/target/run_results.json
+[0m04:13:59.083755 [info ] [MainThread]: 
+[0m04:13:59.084396 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:13:59.084981 [info ] [MainThread]: 
+[0m04:13:59.085519 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m04:13:59.086904 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.6879735, "process_in_blocks": "0", "process_kernel_time": 0.388259, "process_mem_max_rss": "223360", "process_out_blocks": "3888", "process_user_time": 5.139666}
+[0m04:13:59.087754 [debug] [MainThread]: Command `dbt run` succeeded at 04:13:59.087557 after 6.69 seconds
+[0m04:13:59.088340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa48e189af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa473cf0ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa48e8835c0>]}
+[0m04:13:59.089260 [debug] [MainThread]: Flushing usage events
+[0m04:13:59.241437 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:14:18.201806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5da034e150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5da0868110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5da034f3e0>]}
+
+
+============================== 04:14:18.206796 | 42cb331f-be77-42af-9aea-857f78d2d5d4 ==============================
+[0m04:14:18.206796 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:14:18.207871 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'dbt/logs', 'fail_fast': 'False', 'profiles_dir': 'dbt/profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt/profiles', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:14:19.450404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '42cb331f-be77-42af-9aea-857f78d2d5d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5d9e8fdca0>]}
+[0m04:14:19.555750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '42cb331f-be77-42af-9aea-857f78d2d5d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5d86019880>]}
+[0m04:14:19.556797 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m04:14:19.735062 [debug] [MainThread]: checksum: 44f4b502e2ddc67beed4db71ce39b63f2d3b7fc0b96e49a69b096c8f6cc370bc, vars: {}, profile: , target: , version: 1.10.7
+[0m04:14:19.911579 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:14:19.912509 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:14:20.076100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '42cb331f-be77-42af-9aea-857f78d2d5d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5d85998290>]}
+[0m04:14:20.191086 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:14:20.193922 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:14:20.213588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '42cb331f-be77-42af-9aea-857f78d2d5d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5d857a9f70>]}
+[0m04:14:20.214409 [info ] [MainThread]: Found 2 models, 6 data tests, 606 macros
+[0m04:14:20.215135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '42cb331f-be77-42af-9aea-857f78d2d5d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5d858293d0>]}
+[0m04:14:20.218095 [info ] [MainThread]: 
+[0m04:14:20.218863 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:14:20.219649 [info ] [MainThread]: 
+[0m04:14:20.220977 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:14:20.228080 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_generated-surf-468214-g1'
+[0m04:14:20.229124 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:14:20.397822 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1, now list_generated-surf-468214-g1_bank_marketing_dm)
+[0m04:14:20.398685 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:14:20.537102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '42cb331f-be77-42af-9aea-857f78d2d5d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5d9fba2840>]}
+[0m04:14:20.541857 [debug] [Thread-1 (]: Began running node model.bank_marketing.stg_bank_marketing
+[0m04:14:20.542996 [info ] [Thread-1 (]: 1 of 2 START sql view model bank_marketing_dm.stg_bank_marketing ............... [RUN]
+[0m04:14:20.543946 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1_bank_marketing_dm, now model.bank_marketing.stg_bank_marketing)
+[0m04:14:20.544876 [debug] [Thread-1 (]: Began compiling node model.bank_marketing.stg_bank_marketing
+[0m04:14:20.560324 [debug] [Thread-1 (]: Writing injected SQL for node "model.bank_marketing.stg_bank_marketing"
+[0m04:14:20.561403 [debug] [Thread-1 (]: Began executing node model.bank_marketing.stg_bank_marketing
+[0m04:14:20.610656 [debug] [Thread-1 (]: Writing runtime sql for node "model.bank_marketing.stg_bank_marketing"
+[0m04:14:20.611815 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:14:20.612729 [debug] [Thread-1 (]: On model.bank_marketing.stg_bank_marketing: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "model.bank_marketing.stg_bank_marketing"} */
+
+
+  create or replace view `generated-surf-468214-g1`.`bank_marketing_dm`.`stg_bank_marketing`
+  OPTIONS()
+  as 
+
+with source as (
+    select *
+    from `generated-surf-468214-g1`.bank_marketing_raw.bank_marketing
+)
+
+, cleaned as (
+    select
+        cast(row_number() over(order by (select 1)) as int64) as customer_id,
+        age,
+        job,
+        marital,
+        education,
+        `default`,
+        housing,
+        loan,
+        contact,
+        month,
+        day_of_week,
+        duration,
+        campaign,
+        pdays,
+        previous,
+        poutcome,
+        emp_var_rate,
+        cons_price_idx,
+        cons_conf_idx,
+        euribor3m,
+        nr_employed,
+        case when lower(y) in ('yes','y','1','true','t') then 1 else 0 end as converted
+    from source
+)
+
+select * from cleaned;
+
+
+[0m04:14:20.938823 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:cd8bfad0-8ef6-4399-a235-3ce33ced1713&page=queryresults
+[0m04:14:21.311657 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42cb331f-be77-42af-9aea-857f78d2d5d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5da0a5c950>]}
+[0m04:14:21.312862 [info ] [Thread-1 (]: 1 of 2 OK created sql view model bank_marketing_dm.stg_bank_marketing .......... [[32mCREATE VIEW (0 processed)[0m in 0.77s]
+[0m04:14:21.314163 [debug] [Thread-1 (]: Finished running node model.bank_marketing.stg_bank_marketing
+[0m04:14:21.315456 [debug] [Thread-3 (]: Began running node model.bank_marketing.customer_kpis
+[0m04:14:21.316728 [info ] [Thread-3 (]: 2 of 2 START sql table model bank_marketing_dm.customer_kpis ................... [RUN]
+[0m04:14:21.318016 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.bank_marketing.customer_kpis'
+[0m04:14:21.318665 [debug] [Thread-3 (]: Began compiling node model.bank_marketing.customer_kpis
+[0m04:14:21.323813 [debug] [Thread-3 (]: Writing injected SQL for node "model.bank_marketing.customer_kpis"
+[0m04:14:21.324838 [debug] [Thread-3 (]: Began executing node model.bank_marketing.customer_kpis
+[0m04:14:21.341838 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m04:14:21.469780 [debug] [Thread-3 (]: Writing runtime sql for node "model.bank_marketing.customer_kpis"
+[0m04:14:21.470966 [debug] [Thread-3 (]: On model.bank_marketing.customer_kpis: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "model.bank_marketing.customer_kpis"} */
+
+  
+    
+
+    create or replace table `generated-surf-468214-g1`.`bank_marketing_dm`.`customer_kpis`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with base as (
+    select * from `generated-surf-468214-g1`.`bank_marketing_dm`.`stg_bank_marketing`
+)
+
+, agg as (
+    select
+        customer_id,
+        sum(case when converted = 1 then 1 else 0 end) as successful_contacts_count,
+        count(*) as total_contacts,
+        safe_divide(sum(case when converted = 1 then 1 else 0 end), count(*)) as conversion_rate,
+        case
+            when age < 30 then 'young'
+            when age between 30 and 50 then 'adult'
+            else 'senior'
+        end as customer_segment
+    from base
+    group by customer_id, customer_segment
+)
+
+select
+    customer_id,
+    successful_contacts_count,
+    total_contacts,
+    conversion_rate,
+    customer_segment
+from agg
+    );
+  
+[0m04:14:21.866068 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:45fc25d1-0058-4d6b-b3e1-b3192386f661&page=queryresults
+[0m04:14:23.963605 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42cb331f-be77-42af-9aea-857f78d2d5d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5d84582c90>]}
+[0m04:14:23.965064 [info ] [Thread-3 (]: 2 of 2 OK created sql table model bank_marketing_dm.customer_kpis .............. [[32mCREATE TABLE (41.2k rows, 487.2 KiB processed)[0m in 2.65s]
+[0m04:14:23.966419 [debug] [Thread-3 (]: Finished running node model.bank_marketing.customer_kpis
+[0m04:14:23.969512 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:14:23.970178 [debug] [MainThread]: Connection 'model.bank_marketing.stg_bank_marketing' was properly closed.
+[0m04:14:23.970702 [debug] [MainThread]: Connection 'model.bank_marketing.customer_kpis' was properly closed.
+[0m04:14:23.971467 [info ] [MainThread]: 
+[0m04:14:23.972297 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 3.75 seconds (3.75s).
+[0m04:14:23.975217 [debug] [MainThread]: Command end result
+[0m04:14:24.012135 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:14:24.016053 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:14:24.026680 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt/target/run_results.json
+[0m04:14:24.027386 [info ] [MainThread]: 
+[0m04:14:24.028106 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:14:24.028934 [info ] [MainThread]: 
+[0m04:14:24.030369 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m04:14:24.032691 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.9255443, "process_in_blocks": "0", "process_kernel_time": 0.38159, "process_mem_max_rss": "221228", "process_out_blocks": "2600", "process_user_time": 4.693046}
+[0m04:14:24.033607 [debug] [MainThread]: Command `dbt run` succeeded at 04:14:24.033391 after 5.93 seconds
+[0m04:14:24.034264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5da034cd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5da034e150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5da034f3e0>]}
+[0m04:14:24.034929 [debug] [MainThread]: Flushing usage events
+[0m04:14:24.161006 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:14:34.896045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f16f47020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f172299d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f17228f80>]}
+
+
+============================== 04:14:34.900957 | b903b85c-2e19-431d-a4df-a24da06b23a8 ==============================
+[0m04:14:34.900957 [info ] [MainThread]: Running with dbt=1.10.7
+[0m04:14:34.902073 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'dbt/logs', 'profiles_dir': 'dbt/profiles', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test --project-dir dbt --profiles-dir dbt/profiles', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m04:14:36.111951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b903b85c-2e19-431d-a4df-a24da06b23a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f00974170>]}
+[0m04:14:36.217464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b903b85c-2e19-431d-a4df-a24da06b23a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f17698770>]}
+[0m04:14:36.218565 [info ] [MainThread]: Registered adapter: bigquery=1.8.1
+[0m04:14:36.407420 [debug] [MainThread]: checksum: 44f4b502e2ddc67beed4db71ce39b63f2d3b7fc0b96e49a69b096c8f6cc370bc, vars: {}, profile: , target: , version: 1.10.7
+[0m04:14:36.581060 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:14:36.581785 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:14:36.741900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b903b85c-2e19-431d-a4df-a24da06b23a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f004a4590>]}
+[0m04:14:36.853640 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:14:36.856608 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:14:36.891016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b903b85c-2e19-431d-a4df-a24da06b23a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f004a5700>]}
+[0m04:14:36.891884 [info ] [MainThread]: Found 2 models, 6 data tests, 606 macros
+[0m04:14:36.892676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b903b85c-2e19-431d-a4df-a24da06b23a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f1676bef0>]}
+[0m04:14:36.896082 [info ] [MainThread]: 
+[0m04:14:36.896891 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:14:36.897798 [info ] [MainThread]: 
+[0m04:14:36.899264 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:14:36.905987 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_generated-surf-468214-g1_bank_marketing_dm'
+[0m04:14:36.906946 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:14:37.067239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b903b85c-2e19-431d-a4df-a24da06b23a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f1676bf20>]}
+[0m04:14:37.073735 [debug] [Thread-1 (]: Began running node test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8
+[0m04:14:37.074677 [debug] [Thread-2 (]: Began running node test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390
+[0m04:14:37.076148 [debug] [Thread-3 (]: Began running node test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369
+[0m04:14:37.075457 [info ] [Thread-1 (]: 1 of 6 START test accepted_range_customer_kpis_conversion_rate__1__0 ........... [RUN]
+[0m04:14:37.077634 [debug] [Thread-4 (]: Began running node test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0
+[0m04:14:37.078529 [info ] [Thread-2 (]: 2 of 6 START test accepted_range_customer_kpis_successful_contacts_count__1000__0  [RUN]
+[0m04:14:37.079531 [info ] [Thread-3 (]: 3 of 6 START test not_null_customer_kpis_conversion_rate ....................... [RUN]
+[0m04:14:37.080755 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_generated-surf-468214-g1_bank_marketing_dm, now test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8)
+[0m04:14:37.081619 [info ] [Thread-4 (]: 4 of 6 START test not_null_customer_kpis_customer_id ........................... [RUN]
+[0m04:14:37.082902 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390'
+[0m04:14:37.083922 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369'
+[0m04:14:37.084703 [debug] [Thread-1 (]: Began compiling node test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8
+[0m04:14:37.085606 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0'
+[0m04:14:37.086333 [debug] [Thread-2 (]: Began compiling node test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390
+[0m04:14:37.087001 [debug] [Thread-3 (]: Began compiling node test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369
+[0m04:14:37.108050 [debug] [Thread-4 (]: Began compiling node test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0
+[0m04:14:37.111561 [debug] [Thread-1 (]: Writing injected SQL for node "test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8"
+[0m04:14:37.118289 [debug] [Thread-2 (]: Writing injected SQL for node "test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390"
+[0m04:14:37.137238 [debug] [Thread-3 (]: Writing injected SQL for node "test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369"
+[0m04:14:37.138438 [debug] [Thread-4 (]: Writing injected SQL for node "test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0"
+[0m04:14:37.140921 [debug] [Thread-3 (]: Began executing node test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369
+[0m04:14:37.147211 [debug] [Thread-2 (]: Began executing node test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390
+[0m04:14:37.153515 [debug] [Thread-1 (]: Began executing node test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8
+[0m04:14:37.224253 [debug] [Thread-4 (]: Began executing node test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0
+[0m04:14:37.228792 [debug] [Thread-2 (]: Writing runtime sql for node "test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390"
+[0m04:14:37.232560 [debug] [Thread-1 (]: Writing runtime sql for node "test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8"
+[0m04:14:37.236307 [debug] [Thread-4 (]: Writing runtime sql for node "test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0"
+[0m04:14:37.237446 [debug] [Thread-3 (]: Writing runtime sql for node "test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369"
+[0m04:14:37.239354 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:14:37.240671 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m04:14:37.241772 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m04:14:37.242688 [debug] [Thread-1 (]: On test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select
+  conversion_rate as value
+from `generated-surf-468214-g1`.`bank_marketing_dm`.`customer_kpis`
+where (conversion_rate < 0) or (conversion_rate > 1)
+
+  
+  
+      
+    ) dbt_internal_test
+[0m04:14:37.243739 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m04:14:37.244641 [debug] [Thread-2 (]: On test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select
+  successful_contacts_count as value
+from `generated-surf-468214-g1`.`bank_marketing_dm`.`customer_kpis`
+where (successful_contacts_count < 0) or (successful_contacts_count > 1000)
+
+  
+  
+      
+    ) dbt_internal_test
+[0m04:14:37.245613 [debug] [Thread-4 (]: On test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `generated-surf-468214-g1`.`bank_marketing_dm`.`customer_kpis`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m04:14:37.248553 [debug] [Thread-3 (]: On test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select conversion_rate
+from `generated-surf-468214-g1`.`bank_marketing_dm`.`customer_kpis`
+where conversion_rate is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m04:14:37.916919 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:663146c5-46b6-49fe-ab51-37f6b6a78ded&page=queryresults
+[0m04:14:37.920972 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:60111537-1e49-4d1c-96f0-09564f9fe654&page=queryresults
+[0m04:14:37.978360 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:2f183ad9-1587-4339-8d26-a04b2a96a2d8&page=queryresults
+[0m04:14:38.161105 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:618d0413-3269-466c-aff3-a0dde8fd4398&page=queryresults
+[0m04:14:38.314881 [info ] [Thread-4 (]: 4 of 6 PASS not_null_customer_kpis_customer_id ................................. [[32mPASS[0m in 1.23s]
+[0m04:14:38.316322 [debug] [Thread-4 (]: Finished running node test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0
+[0m04:14:38.317281 [debug] [Thread-4 (]: Began running node test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e
+[0m04:14:38.318290 [info ] [Thread-4 (]: 5 of 6 START test not_null_customer_kpis_successful_contacts_count ............. [RUN]
+[0m04:14:38.319332 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bank_marketing.not_null_customer_kpis_customer_id.e5af66d0f0, now test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e)
+[0m04:14:38.320252 [debug] [Thread-4 (]: Began compiling node test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e
+[0m04:14:38.327142 [debug] [Thread-4 (]: Writing injected SQL for node "test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e"
+[0m04:14:38.328129 [debug] [Thread-4 (]: Began executing node test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e
+[0m04:14:38.331643 [debug] [Thread-4 (]: Writing runtime sql for node "test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e"
+[0m04:14:38.332624 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m04:14:38.333430 [debug] [Thread-4 (]: On test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select successful_contacts_count
+from `generated-surf-468214-g1`.`bank_marketing_dm`.`customer_kpis`
+where successful_contacts_count is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m04:14:38.343736 [info ] [Thread-1 (]: 1 of 6 PASS accepted_range_customer_kpis_conversion_rate__1__0 ................. [[32mPASS[0m in 1.26s]
+[0m04:14:38.345591 [debug] [Thread-1 (]: Finished running node test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8
+[0m04:14:38.346502 [debug] [Thread-1 (]: Began running node test.bank_marketing.unique_customer_kpis_customer_id.978c64931d
+[0m04:14:38.347426 [info ] [Thread-1 (]: 6 of 6 START test unique_customer_kpis_customer_id ............................. [RUN]
+[0m04:14:38.348527 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bank_marketing.accepted_range_customer_kpis_conversion_rate__1__0.5865a70aa8, now test.bank_marketing.unique_customer_kpis_customer_id.978c64931d)
+[0m04:14:38.349372 [debug] [Thread-1 (]: Began compiling node test.bank_marketing.unique_customer_kpis_customer_id.978c64931d
+[0m04:14:38.359631 [debug] [Thread-1 (]: Writing injected SQL for node "test.bank_marketing.unique_customer_kpis_customer_id.978c64931d"
+[0m04:14:38.360642 [debug] [Thread-1 (]: Began executing node test.bank_marketing.unique_customer_kpis_customer_id.978c64931d
+[0m04:14:38.364133 [debug] [Thread-1 (]: Writing runtime sql for node "test.bank_marketing.unique_customer_kpis_customer_id.978c64931d"
+[0m04:14:38.365107 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:14:38.366014 [debug] [Thread-1 (]: On test.bank_marketing.unique_customer_kpis_customer_id.978c64931d: /* {"app": "dbt", "dbt_version": "1.10.7", "profile_name": "bank_marketing_profile", "target_name": "dev", "node_id": "test.bank_marketing.unique_customer_kpis_customer_id.978c64931d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `generated-surf-468214-g1`.`bank_marketing_dm`.`customer_kpis`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m04:14:38.370124 [info ] [Thread-2 (]: 2 of 6 PASS accepted_range_customer_kpis_successful_contacts_count__1000__0 .... [[32mPASS[0m in 1.29s]
+[0m04:14:38.371574 [debug] [Thread-2 (]: Finished running node test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390
+[0m04:14:38.509592 [info ] [Thread-3 (]: 3 of 6 PASS not_null_customer_kpis_conversion_rate ............................. [[32mPASS[0m in 1.43s]
+[0m04:14:38.511042 [debug] [Thread-3 (]: Finished running node test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369
+[0m04:14:38.744213 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:27d78b58-df38-4611-b0ed-5c97e4947a3a&page=queryresults
+[0m04:14:38.986015 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=generated-surf-468214-g1&j=bq:US:a9bf4e7c-d658-4496-ba31-a5a5196247ba&page=queryresults
+[0m04:14:39.138442 [info ] [Thread-4 (]: 5 of 6 PASS not_null_customer_kpis_successful_contacts_count ................... [[32mPASS[0m in 0.82s]
+[0m04:14:39.140411 [debug] [Thread-4 (]: Finished running node test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e
+[0m04:14:39.489439 [info ] [Thread-1 (]: 6 of 6 PASS unique_customer_kpis_customer_id ................................... [[32mPASS[0m in 1.14s]
+[0m04:14:39.490609 [debug] [Thread-1 (]: Finished running node test.bank_marketing.unique_customer_kpis_customer_id.978c64931d
+[0m04:14:39.493719 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:14:39.494657 [debug] [MainThread]: Connection 'test.bank_marketing.unique_customer_kpis_customer_id.978c64931d' was properly closed.
+[0m04:14:39.495219 [debug] [MainThread]: Connection 'test.bank_marketing.accepted_range_customer_kpis_successful_contacts_count__1000__0.ec32493390' was properly closed.
+[0m04:14:39.495760 [debug] [MainThread]: Connection 'test.bank_marketing.not_null_customer_kpis_conversion_rate.b17da64369' was properly closed.
+[0m04:14:39.496261 [debug] [MainThread]: Connection 'test.bank_marketing.not_null_customer_kpis_successful_contacts_count.f884a47d5e' was properly closed.
+[0m04:14:39.496887 [info ] [MainThread]: 
+[0m04:14:39.497534 [info ] [MainThread]: Finished running 6 data tests in 0 hours 0 minutes and 2.60 seconds (2.60s).
+[0m04:14:39.500392 [debug] [MainThread]: Command end result
+[0m04:14:39.535371 [debug] [MainThread]: Wrote artifact WritableManifest to dbt/target/manifest.json
+[0m04:14:39.538063 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt/target/semantic_manifest.json
+[0m04:14:39.548594 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt/target/run_results.json
+[0m04:14:39.549235 [info ] [MainThread]: 
+[0m04:14:39.549951 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:14:39.550764 [info ] [MainThread]: 
+[0m04:14:39.551593 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m04:14:39.553318 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 4.750043, "process_in_blocks": "0", "process_kernel_time": 0.414567, "process_mem_max_rss": "223664", "process_out_blocks": "2696", "process_user_time": 4.790973}
+[0m04:14:39.554137 [debug] [MainThread]: Command `dbt test` succeeded at 04:14:39.553983 after 4.75 seconds
+[0m04:14:39.554799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f168c1010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f177e91c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f176542f0>]}
+[0m04:14:39.555432 [debug] [MainThread]: Flushing usage events
+[0m04:14:39.740224 [debug] [MainThread]: An error was encountered while trying to flush usage events

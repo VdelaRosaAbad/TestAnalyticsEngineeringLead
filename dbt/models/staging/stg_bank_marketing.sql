@@ -2,7 +2,7 @@
 
 with source as (
     select *
-    from `{{ env_var('GOOGLE_CLOUD_PROJECT') }}`.bank_marketing_raw.bank_marketing
+    from `generated-surf-468214-g1`.bank_marketing_raw.bank_marketing
 )
 
 , cleaned as (
@@ -12,7 +12,7 @@ with source as (
         job,
         marital,
         education,
-        default,
+        `default`,
         housing,
         loan,
         contact,

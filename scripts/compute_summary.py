@@ -1,9 +1,8 @@
-import os
 from google.cloud import bigquery
 
 
 def main() -> None:
-    project = os.environ["GOOGLE_CLOUD_PROJECT"]
+    project = "generated-surf-468214-g1"
     client = bigquery.Client(project=project)
     table = f"{project}.bank_marketing_dm.customer_kpis"
 

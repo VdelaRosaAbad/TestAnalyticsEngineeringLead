@@ -6,3 +6,5 @@ pyarrow==17.0.0
 dbt-bigquery==1.8.1
 pytest==8.2.2
 
+gspread
+google-auth-oauthlib
